@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment_From</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <from action=" ">
+      <nav>
+      <h1>Payment From</h1>
+      </nav>
+      <h2>Contact Information</h2>
+      <p>Name: *<input type="text" name="name" required /></p>
+      <fieldset>
+        <legend>Gender *</legend>
+        <p>
+          Male<input type="radio" name="Gender" id="male" required />
+          Female<input type="radio" name="Gender" id="female" required />
+        </p>
+      </fieldset>
+      <p>
+        Address:<textarea
+          name="address"
+          id="address"
+          col="100"
+          row="8"
+        ></textarea>
+      </p>
+      <p>Email:* <input type="email" name="email" id="email" required /></p>
+      <p>
+        Pincode: * <input type="number" name="pincode" id="pincode" required />
+      </p>
+      <h2>Payment Information</h2>
+      <p>
+        Card type: *
+        <select name="card type" id="card type" required>
+          <option value="">---Select a Card type---</option>
+          <option value="Visa">Visa</option>
+          <option value="PayPak">PayPak</option>
+          <option value="MasterCard">MasterCard</option>
+        </select>
+      </p>
+      <p>
+        Card number *<input
+          type="number"
+          name="card_number"
+          id="card_number"
+          required
+        />
+      </p>
+      <p>
+        Expiration Date:*<input
+          type="date"
+          name="Exp_date"
+          id="Exp_date"
+          required
+        />
+      </p>
+      <p>CVV * <input type="password" name="cvv" id="cvv" required /></p>
+      <button id="btn">Pay Now</button>
+    </from>
+  </body>
+</html>
